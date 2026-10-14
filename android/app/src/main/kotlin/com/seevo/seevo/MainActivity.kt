@@ -1,4 +1,4 @@
-package com.example.seevo
+package com.seevo.seevo
 
 import io.flutter.embedding.android.FlutterActivity
 
