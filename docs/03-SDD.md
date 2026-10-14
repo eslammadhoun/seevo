@@ -20,7 +20,7 @@ Seevo is a single Flutter app. It uses **Clean Architecture** and a **feature-fi
 | Navigation | `go_router` | Declarative routes, deep-link ready |
 | Camera | `camera` | Official plugin; image stream for frames |
 | Gallery | `image_picker` | Official plugin; asks for permission only when used (FR-6.4) |
-| Inference | `tflite_flutter` (+ `IsolateInterpreter`) | On-device TFLite with GPU / NNAPI / Core ML delegates |
+| Inference | `flutter_litert` (LiteRT, formerly TFLite; `IsolateInterpreter` API) | On-device inference with GPU / Metal / Core ML delegates; bundled native libs. Chosen over `tflite_flutter` (2026-10-14): actively maintained, current runtime, and avoids the ~3 GB TensorFlow repo clone on iOS |
 | Image processing | `image` | Decode, resize, convert YUV/BGRA to RGB |
 | TTS | `flutter_tts` | Uses the system TTS engines |
 | Permissions | `permission_handler` | Unified permission flow |
@@ -236,7 +236,7 @@ flowchart LR
    - Precision/recall on a 100-image labelled test set
 3. Pick the model with the best accuracy that meets NFR-P1, P2 and M2 and passes the licence check.
 
-**Decision (2026-10-14, owner): Ultralytics YOLO (YOLO11n, exported to TFLite, float16/int8). Accepted AGPL-3.0 for now; must open-source the app or buy an Ultralytics Enterprise licence before any closed-source commercial release. EfficientDet-Lite2 stays the fallback, and swapping is cheap because of the `ObjectDetector` interface.**
+**Decision (2026-10-14, owner): Ultralytics YOLO (YOLO11n, exported to TFLite/LiteRT, float16/int8, run via `flutter_litert`). Accepted AGPL-3.0 for now; must open-source the app or buy an Ultralytics Enterprise licence before any closed-source commercial release. EfficientDet-Lite2 stays the fallback, and swapping is cheap because of the `ObjectDetector` interface.**
 
 ## 10. Error Handling
 | Situation | Behaviour |
