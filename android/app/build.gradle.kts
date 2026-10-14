@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.seevo.seevo"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 37 // permission_handler 13 requires compiling against API 37
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
