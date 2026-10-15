@@ -66,7 +66,7 @@ seevo/
 │  ├─ main.dart
 │  ├─ app.dart                    # MaterialApp.router, themes, l10n
 │  ├─ core/
-│  │  ├─ theme/                   # light, dark, high-contrast tokens
+│  │  ├─ theme/                   # light and dark tokens
 │  │  ├─ router/                  # go_router config
 │  │  ├─ l10n/                    # ARB files
 │  │  ├─ utils/                   # image conversion, geometry
@@ -168,12 +168,12 @@ Uses the same `ObjectDetector`. The photo is decoded and its EXIF orientation is
   - Every control is wrapped in `Semantics` with a label and hint.
   - The detection overlay is excluded from semantics; the list of detections is exposed instead.
 - **Themes:**
-  - Light, dark and high-contrast.
+  - Light and dark (a dedicated high-contrast theme was dropped on 2026-10-15; both modes meet WCAG AA contrast).
   - Contrast of at least 4.5:1, minimum tap target 48 dp.
   - Text scales with the system font size (NFR-A1/A2).
 
 ## 7. UI / Screen Flow
-> **Figma design (source of truth for UI):** https://www.figma.com/design/utmKz4eciRFdDTsix2opPS — pages: Cover, Design System (tokens: Light / Dark / High Contrast), Components, Screens (13 screens, light + dark), User Flow.
+> **Figma design (source of truth for UI):** https://www.figma.com/design/utmKz4eciRFdDTsix2opPS — pages: Cover, Design System (tokens: Light / Dark), Components, Screens (13 screens, light + dark), User Flow.
 
 ```mermaid
 flowchart LR
