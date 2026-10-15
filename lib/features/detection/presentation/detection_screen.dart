@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+
+class DetectionScreen extends StatelessWidget {
+  const DetectionScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Seevo')),
+      body: const Center(child: Text('Detection Screen')),
+    );
+  }
+}
