@@ -43,7 +43,7 @@ A standalone mobile app built with Flutter. It uses device services for the came
 |---|---|---|
 | **P1 — Sara, curious user** | 25, sighted, uses phone daily | Fast, visual results; simple UI; fun to use |
 | **P2 — Omar, blind user** | 40, uses VoiceOver/TalkBack every day | Spoken results, minimal visual reliance, predictable controls, no spam |
-| **P3 — Lina, low-vision user** | 65, partial sight | Large text, high contrast, voice + visual |
+| **P3 — Lina, low-vision user** | 65, partial sight | Large text, large controls, voice + visual |
 
 ### 2.3 Operating environment
 - iOS 15.0+ (iPhone), Android 8.0+ (API 26), phones only for v1.0.
@@ -93,7 +93,7 @@ A standalone mobile app built with Flutter. It uses device services for the came
 ### FR-4 Accessibility Mode — **M**
 | ID | Requirement |
 |---|---|
-| FR-4.1 | The app shall provide an Accessibility Mode with large controls and high-contrast colours. |
+| FR-4.1 | The app shall provide an Accessibility Mode with large controls (≥ 64 px touch targets) and larger text. |
 | FR-4.2 | The app shall auto-suggest Accessibility Mode when a screen reader is active on first launch. |
 | FR-4.3 | All interactive elements shall have meaningful semantic labels for VoiceOver/TalkBack. |
 | FR-4.4 | The app shall give haptic feedback when a new object is detected (configurable). |
@@ -217,7 +217,7 @@ Accounts/login, history, cloud sync, cloud AI, OCR, custom classes, sharing resu
 ## 6. External Interface Requirements
 | Interface | Description |
 |---|---|
-| User interface | Screens: Onboarding, Live Camera (home), Photo Result, Settings, About. Light / Dark / High-contrast themes. |
+| User interface | Screens: Onboarding, Live Camera (home), Photo Result, Settings, About. Light / Dark themes (follow the system setting by default). |
 | Hardware | Rear camera, torch, haptic engine, speaker. GPU/NPU used when available. |
 | Software | iOS AVFoundation & AVSpeechSynthesizer; Android CameraX & TextToSpeech (via Flutter plugins); TensorFlow Lite runtime. |
 | Communications | None (offline). Links to the privacy policy open in the browser. |

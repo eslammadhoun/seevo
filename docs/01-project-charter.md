@@ -35,7 +35,7 @@ Seevo is a cross-platform (iOS & Android) mobile app that identifies objects in 
 - Live camera object detection with bounding boxes, labels and confidence.
 - Photo detection: capture a photo or pick from the gallery.
 - Voice feedback (text-to-speech) announcing detected objects.
-- Accessibility mode: large UI, high contrast, haptics, screen-reader support, position cues.
+- Accessibility mode: large UI, haptics, screen-reader support, position cues.
 - Settings (confidence threshold, TTS options, language, performance mode).
 - Onboarding and permission handling.
 - English UI, with a localization-ready structure.
