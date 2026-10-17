@@ -49,6 +49,7 @@ dependencies:
   intl: ^0.20.2
   flutter_localizations:
     sdk: flutter
+  flutter_svg: ^2.3.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -71,6 +72,7 @@ flutter:
   assets:
     - assets/models/
     - assets/fonts/OFL.txt
+    - assets/icons/
 
   fonts:
     - family: Inter
