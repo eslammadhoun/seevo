@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seevo/core/l10n/app_localizations.dart';
 import 'package:seevo/core/router/app_router.dart';
 import 'core/theme/seevo_theme.dart';
 
@@ -8,6 +9,8 @@ class SeevoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       title: 'Seevo',
       debugShowCheckedModeBanner: false,
       theme: SeevoTheme.light,
