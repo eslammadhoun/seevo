@@ -115,6 +115,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Private · Offline · On-device AI'**
   String get splashPrivacyPolicy;
+
+  /// No description provided for @onBoardingSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get onBoardingSkip;
+
+  /// No description provided for @onBoardingDetectionExample.
+  ///
+  /// In en, this message translates to:
+  /// **'Laptop, ahead'**
+  String get onBoardingDetectionExample;
+
+  /// No description provided for @onBoardingTitle1.
+  ///
+  /// In en, this message translates to:
+  /// **'Point. See, Know'**
+  String get onBoardingTitle1;
+
+  /// No description provided for @onBoardingDescription1.
+  ///
+  /// In en, this message translates to:
+  /// **'Aim your camera at anything and Seevo instantly tells you what it sees — with boxes on screen and a voice in your ear.'**
+  String get onBoardingDescription1;
+
+  /// No description provided for @onBoardingTitle2.
+  ///
+  /// In en, this message translates to:
+  /// **'Private by design'**
+  String get onBoardingTitle2;
+
+  /// No description provided for @onBoardingDescription2.
+  ///
+  /// In en, this message translates to:
+  /// **'All AI runs on your phone. Seevo works offline and your images never leave your device.'**
+  String get onBoardingDescription2;
+
+  /// No description provided for @onBoardingTitle3.
+  ///
+  /// In en, this message translates to:
+  /// **'Made for everyone'**
+  String get onBoardingTitle3;
+
+  /// No description provided for @onBoardingDescription3.
+  ///
+  /// In en, this message translates to:
+  /// **'Seevo speaks what it sees, vibrates on new objects and works fully with VoiceOver and TalkBack.'**
+  String get onBoardingDescription3;
+
+  /// No description provided for @onBoardingContinueButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get onBoardingContinueButton;
+
+  /// No description provided for @onBoardingGetStartedButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get onBoardingGetStartedButton;
+
+  /// No description provided for @cameraPermissionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow camera access'**
+  String get cameraPermissionTitle;
+
+  /// No description provided for @cameraPermissionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Seevo needs your camera to recognise objects around you.'**
+  String get cameraPermissionDescription;
+
+  /// No description provided for @cameraPermissionPromise1.
+  ///
+  /// In en, this message translates to:
+  /// **'Images are processed on your phone only'**
+  String get cameraPermissionPromise1;
+
+  /// No description provided for @cameraPermissionPromise2.
+  ///
+  /// In en, this message translates to:
+  /// **'Works offline — nothing is uploaded'**
+  String get cameraPermissionPromise2;
+
+  /// No description provided for @cameraPermissionPromise3.
+  ///
+  /// In en, this message translates to:
+  /// **'Change this anytime in Settings'**
+  String get cameraPermissionPromise3;
+
+  /// No description provided for @cameraPermissionAllowCamera.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow camera'**
+  String get cameraPermissionAllowCamera;
+
+  /// No description provided for @cameraPermissionNotNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get cameraPermissionNotNow;
+
+  /// No description provided for @cameraPermissionDeniedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Camera access is off'**
+  String get cameraPermissionDeniedTitle;
+
+  /// No description provided for @cameraPermissionDeniedDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Live detection needs the camera. You can turn it on in your phone settings, or analyse a photo from your gallery instead.'**
+  String get cameraPermissionDeniedDescription;
+
+  /// No description provided for @cameraPermissionDeniedOpenSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Settings'**
+  String get cameraPermissionDeniedOpenSettings;
+
+  /// No description provided for @cameraPermissionDeniedPickPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a photo instead'**
+  String get cameraPermissionDeniedPickPhoto;
 }
 
 class _AppLocalizationsDelegate

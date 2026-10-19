@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:seevo/core/l10n/app_localizations.dart';
 import 'package:seevo/core/router/app_router.dart';
 import 'core/theme/seevo_theme.dart';
@@ -8,15 +9,21 @@ class SeevoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      title: 'Seevo',
-      debugShowCheckedModeBanner: false,
-      theme: SeevoTheme.light,
-      darkTheme: SeevoTheme.dark,
-      themeMode: ThemeMode.system,
-      routerConfig: AppRouter.appRouter,
+    return ScreenUtilPlusInit(
+      designSize: const Size(390, 844),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      child: MaterialApp.router(
+        locale: const Locale('en'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        title: 'Seevo',
+        debugShowCheckedModeBanner: false,
+        theme: SeevoTheme.light,
+        darkTheme: SeevoTheme.dark,
+        themeMode: ThemeMode.system,
+        routerConfig: AppRouter.appRouter,
+      ),
     );
   }
 }
